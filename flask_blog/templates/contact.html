@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+<!-- BLOCK CONTENT -->
+{% block content %}
+<!-- PAGE HEADER -->
+<header class="bg-dark text-white">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 m-auto text-center">
+				<p style="font-size: 2rem">Contact Me</p>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section class="py-3">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card bg-info text-white text-center">
+					<div class="card-body">
+						<i class="fas fa-map-marker-alt fa-2x mb-2"></i>
+						<p>Kadıköy, Istanbul, Turkey</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card bg-info text-white text-center">
+					<div class="card-body">
+						<i class="fas fa-phone fa-2x mb-2"></i>
+						<p>
+							(545) 602 - 1942
+							<br />
+							<br />
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card bg-info text-white text-center">
+					<div class="card-body">
+						<i class="fas fa-at fa-2x mb-2"></i>
+						<p>m.jubeni <br />@protonmail.com</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="py-3">
+	<div class="container">
+		<div class="card p-4">
+			<div class="card-body">
+				<h3 class="text-center">
+					Please fill out this form to contact me:
+				</h3>
+				<hr />
+				<form class="form-group" method="post">
+					{{ form.hidden_tag() }}
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								{{ form.name.label(class="form-control-label")}}
+								{{ form.name(class="form-control") }}
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								{{form.email.label(class="form-control-label")}}
+								{{form.email(class="form-control")}}
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+								{{form.text.label(class="form-control-label")}}
+								{{ form.text(class="form-control", rows="7") }}
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								{{form.submit(class="btn btn-outline-success
+								btn-block")}}
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock %}

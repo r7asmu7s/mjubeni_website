@@ -1,0 +1,246 @@
+{% extends 'base.html' %}
+<br />
+{% block content %}
+
+<!-- PAGE HEADER -->
+<header class="bg-dark text-white">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 m-auto text-center">
+				<p style="font-size: 2rem">About Me</p>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="py-3">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+				<p class="lead pt-5">Hi. Mehrzad here.</p>
+				<p class="lead">
+					The roller-coaster of life has led me in two career paths.
+					let's go through them separately:
+				</p>
+			</div>
+			<div class="col-md-5">
+				<img
+					src="{{url_for('static', filename = 'img/mjubeni_picture.jpg')}}"
+					alt="mJubeni picture"
+					class="img-fluid"
+					style="border-radius: 90% 10% 90% 10% / 10% 90% 10% 90%"
+				/>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- ENGLISH TEACHER SECTION -->
+<section class="bg-dark text-white py-2">
+	<div class="container py-3">
+		<div class="row">
+			<div class="col-md-8">
+				<h2 style="font-size: 2rem" class="display-4">
+					English Teacher:
+				</h2>
+				<p>
+					English language has been a life-long journey for me. I
+					started learning English as a toddler, my mom taught me
+					rudimentary vocabulary she knew and read stories, exposing
+					me to the language. As a teenager I started doing
+					translations from English to Farsi and vice versa, which
+					ended up with writing and translating articles for @home
+					Robotics Team at Islamic Azad University and industrial
+					manuals and books for Nivan Hydrualics Co.
+				</p>
+				<p>
+					Some traits run in the family, as for ours, it's been
+					teaching. I started teaching English in my first year in
+					collegue, having one-on-one sessions and free discussion
+					classes. Later, I taught at the University of Applied
+					Science and Technology in Tehran, Iran. To validate myself
+					and reach the apex level of teaching methods, I obtained the
+					CELTA certificate, in Istanbul, Turkey. Nowadays, due to the
+					pandemic, most of my classes are online, looking after 30+
+					students as the prepare for TOFEL, IELTS and GRE.
+				</p>
+			</div>
+			<div
+				class="col-md-4 d-flex align-items-center justify-content-center"
+			>
+				<p class="text-center">
+					<i class="fas fa-chalkboard-teacher fa-10x"></i>
+					<br /><br />
+					Download
+					<br />
+					English Teacher CV:
+					<br />
+					<a
+						href="https://drive.google.com/file/d/1GYcGQbcrLN_Arhqv9Ri699AmF2s7cijO/view?usp=sharing"
+						target="_blank"
+						style="text-decoration: none; color: white"
+						><i class="fas fa-cloud-download-alt fa-1x"></i
+					></a>
+				</p>
+			</div>
+		</div>
+		<div class="row mb-4">
+			<div class="col-md-12">
+				<div
+					class="card bg-transparent text-white border-white text-center"
+				>
+					<div class="card-body">
+						<i
+							class="bi bi-patch-check-fill"
+							style="font-size: 3rem"
+						></i>
+						<h5>University of Cambridge CELTA Certificate</h5>
+						<p>
+							"Mehrzad was very responsive to feedback and as a
+							result, made astonishing progress in the last three
+							TPs. He was a hard-working, organized, professional
+							and cooperative member of the group. He shows great
+							potential to be an effective classroom teacher. We
+							wish him well for the future."
+						</p>
+						<blockquote class="blockquote text-center">
+							<footer class="blockquote-footer">
+								<!-- Someone famous in <cite title="Source Title">Source Title</cite> -->
+								CELTA Course Instructor
+								<cite title="Source Title"></cite>
+							</footer>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- BLOCKQUOTE -->
+<section class="bg-transparent py-3">
+	<div class="container">
+		<blockquote class="blockquote text-right">
+			<p class="mb-0 lead">
+				"It's not how much you know that counts,
+				<br />
+				but how much you can recall under stress."
+			</p>
+			<footer class="blockquote-footer">
+				<!-- Someone famous in <cite title="Source Title">Source Title</cite> -->
+				John Danaher <cite title="Source Title"></cite>
+			</footer>
+		</blockquote>
+	</div>
+</section>
+<!-- DATA SCIENTIST SECTION -->
+<section class="bg-light text-dark py-2">
+	<div class="container py-3">
+		<div class="row">
+			<div
+				class="col-md-4 d-flex align-items-center justify-content-center"
+			>
+				<p class="text-center">
+					<i class="fas fa-laptop-code fa-10x"></i>
+					<br /><br />
+					Visit Profiles:
+
+					<br />
+					<a
+						style="text-decoration: none; color: black"
+						href="https://github.com/r7asmu7s"
+						><i class="fab fa-github fa-2x p-2"></i
+					></a>
+					<a
+						style="text-decoration: none; color: black"
+						href="https://www.kaggle.com/r7asmu7s"
+						><i class="fab fa-kaggle fa-2x p-2"></i
+					></a>
+				</p>
+			</div>
+			<div class="col-md-8">
+				<h2 style="font-size: 2rem" class="display-4">
+					Data Scientist:
+				</h2>
+				<p>
+					My first exposure to programming was during collegue with
+					FORTRAN and MATLAB, as I got my bachelor's degrre in
+					Mechanical Engineering. In 2018, I started learning
+					Front-End Web Development with JavaScript as stepping stone
+					to find my way back in world of programming.
+				</p>
+				<p>
+					In 2019, I switched gears to Python with intention of
+					learning data science, alongside covering algorithms and
+					mathematical topics by going through related textbooks.
+					After finishing a bunch of online bootcamps, learning
+					scikit-learn, pandas and numpy libraries for data science,
+					SQL, plotly and other few libraries for data visualization
+					and for creating dashboards. Recently I've been working on
+					flask which also this website is written in , in addition to
+					improve the dashboards I create.
+				</p>
+				<p>
+					In 2021, I have been working my way up with tensorflow and
+					NLP. As of now, I mostly work on projects to build my
+					portfolio.
+				</p>
+			</div>
+		</div>
+
+		<div class="row mb-4">
+			<div class="col-md-4">
+				<div class="card bg-transparent text-dark text-center">
+					<div class="card-body">
+						<i
+							class="bi bi-patch-check-fill"
+							style="font-size: 3rem"
+						></i>
+						<h5>Data Scientist with Python Career Path</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card bg-dark text-white text-center">
+					<div class="card-body">
+						<i
+							class="bi bi-patch-check-fill"
+							style="font-size: 3rem"
+						></i>
+						<h5>Data Science and Machine Learning Bootcamp</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card bg-transparent text-dark text-center">
+					<div class="card-body">
+						<i
+							class="bi bi-patch-check-fill"
+							style="font-size: 3rem"
+						></i>
+						<h5>SQL Bootcamp</h5>
+						<br />
+						<br />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- HOME CONTACT SECTION -->
+<section id="home-heading" class="bg-white text-dark text-center p-5">
+	<div class="row">
+		<div class="col">
+			<div class="container pt-3">
+				<h1>Are You Ready To Get Started?</h1>
+				<p class="d-none d-md-block"></p>
+				<a
+					href="{{url_for('core.contact')}}"
+					class="btn btn-outline-dark btn-lg"
+					>Contact Me</a
+				>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

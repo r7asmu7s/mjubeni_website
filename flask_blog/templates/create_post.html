@@ -1,0 +1,31 @@
+{% extends 'base.html'%}
+<br />
+{% block content %}
+<!-- HEADER -->
+<header id="main-header" class="py-2 bg-white text-dark text-center">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h3><i class="fas fa-pen"></i> {{action_title}}</h3>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="container">
+	<form class="form-group" method="post">
+		{{ form.hidden_tag() }}
+		<div class="form-group">
+			{{ form.title.label(class="form-control-label")}} {{
+			form.title(class="form-control form-control-lg") }}
+		</div>
+		<div class="form-group">
+			{{form.text.label(class="form-control-label")}} {{
+			form.text(class="form-control form-control-lg", rows="13") }}
+		</div>
+		<div class="form-group">
+			{{form.submit(class="btn btn-outline-success btn-block")}}
+		</div>
+	</form>
+</div>
+{% endblock %}
