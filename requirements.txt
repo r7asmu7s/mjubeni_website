@@ -5,7 +5,7 @@ flask_migrate
 flask_login
 werkzeug
 flask_wtf
-wtforms
+wtforms[email]
 flask_mail
 jinja2
 markupsafe
