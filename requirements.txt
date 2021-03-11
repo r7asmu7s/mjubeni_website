@@ -7,3 +7,7 @@ werkzeug
 flask_wtf
 wtforms
 flask_mail
+jinja2
+markupsafe
+certifi
+wincertstore

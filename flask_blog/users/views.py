@@ -15,21 +15,21 @@ def logout():
     return redirect(url_for('core.index'))
 
 
-@users.route('/_+register+_', methods=['GET', 'POST'])
-def register():
-    form = RegisterationForm()
+# @users.route('/_+register+_', methods=['GET', 'POST'])
+# def register():
+#     form = RegisterationForm()
 
-    if form.validate_on_submit():
-        user = User(email=form.email.data, username=form.username.data, password=form.password.data)
+#     if form.validate_on_submit():
+#         user = User(email=form.email.data, username=form.username.data, password=form.password.data)
 
-        db.session.add(user)
-        db.session.commit()
+#         db.session.add(user)
+#         db.session.commit()
 
-        flash('Thanks for Registeration!')
+#         flash('Thanks for Registeration!')
 
-        return redirect(url_for('users.login'))
+#         return redirect(url_for('users.login'))
 
-    return render_template('register.html', form=form)
+#     return render_template('register.html', form=form)
 
 
 @users.route('/_+login+_', methods=['GET', 'POST'])
@@ -59,7 +59,7 @@ def login():
             flash('Login Unsuccessful. Please check username and password.')
             return redirect(url_for('users.login'))
 
-    return render_template('login.html', form=form)
+    return render_template('login.html', form=form, title='mJubeni | Login')
 
 
 @users.route('/_+account+_', methods=['GET', 'POST'])
@@ -81,7 +81,7 @@ def account():
         form.username.data = current_user.username
         form.email.data = current_user.email
 
-    return render_template('account.html', form=form)
+    return render_template('account.html', form=form, title='mJubeni | Dashboard')
 
 
 # @users.route('/<username>')

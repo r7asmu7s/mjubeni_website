@@ -68,24 +68,13 @@
 							>Contact Me</a
 						>
 						{% if current_user.is_authenticated %}
-						<a class="nav-link" href="{{url_for('users.logout')}}"
-							>Log Out</a
-						>
 						<a class="nav-link" href="{{url_for('users.account')}}"
 							>Account</a
 						>
-						<a
-							class="nav-link"
-							href="{{url_for('blog_posts.create_post')}}"
-							>Create a Post</a
+						<a class="nav-link" href="{{url_for('users.logout')}}"
+							>Log Out</a
 						>
-						{% else %}
-						<a class="nav-link" href="{{url_for('users.login')}}"
-							>Log In</a
-						>
-						<a class="nav-link" href="{{url_for('users.register')}}"
-							>Register</a
-						>
+
 						{% endif %}
 					</div>
 				</div>

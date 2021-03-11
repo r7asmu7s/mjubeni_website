@@ -22,7 +22,7 @@ def create_post():
         flash('Blog Post Created!')
         return redirect(url_for('core.blog'))
 
-    return render_template('create_post.html', form=form, action_title='Create Post')
+    return render_template('create_post.html', form=form, action_title='Create Post', title='mJubeni | Create Post')
 
 
 @blog_posts.route('/<int:blog_post_id>/update', methods=['GET', 'POST'])
@@ -50,7 +50,7 @@ def update_post(blog_post_id):
         form.title.data = blog_post.title
         form.text.data = blog_post.text
 
-    return render_template('create_post.html', title='Updating', form=form, action_title='Update Post')
+    return render_template('create_post.html', title='mJubeni | Update Post', form=form, action_title='Update Post')
 
 
 @blog_posts.route('/<int:blog_post_id>/delete', methods=['GET', 'POST'])
