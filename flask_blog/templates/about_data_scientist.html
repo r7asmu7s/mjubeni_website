@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+<br />
+{% block content %}
+
+<!-- PAGE HEADER -->
+<header class="bg-dark text-white">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 m-auto text-center">
+				<p style="font-size: 2rem">As Data Scientist</p>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="py-3">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+				<p class="lead pt-4">Hi. Mehrzad here.</p>
+				<p class="lead">
+					<span class="text-muted pb-2 d-block">
+						“Information is the oil of the 21st century, and
+						analytics is the combustion engine”
+						<br />
+						— Peter Sondergaard</span
+					>
+
+					With my background in Mechanical Engineering, it seemed
+					inevitable to be drawn to Data Science: To be able to answer
+					question, to solve problems, to move alongside thechnology.
+				</p>
+			</div>
+			<div class="col-md-2"></div>
+			<div class="col-md-3">
+				<img
+					src="{{url_for('static', filename = 'img/mjubeni_picture.jpg')}}"
+					alt="mJubeni picture"
+					class="img-fluid"
+					style="border-radius: 10% 90% 10% 90% / 90% 10% 90% 10%"
+				/>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- DATA SCIENTIST SECTION -->
+<section class="bg-light text-dark py-2">
+	<div class="container py-3">
+		<div class="row">
+			<div
+				class="col-md-4 d-flex align-items-center justify-content-center"
+			>
+				<p class="text-center">
+					<i class="fas fa-laptop-code fa-10x"></i>
+					<br /><br />
+					Visit Profiles:
+
+					<br />
+					<a
+						style="text-decoration: none; color: black"
+						href="https://github.com/r7asmu7s"
+						><i class="fab fa-github fa-2x p-2"></i
+					></a>
+					<a
+						style="text-decoration: none; color: black"
+						href="https://www.kaggle.com/r7asmu7s"
+						><i class="fab fa-kaggle fa-2x p-2"></i
+					></a>
+				</p>
+			</div>
+			<div class="col-md-8">
+				<h3 class="card-title">Storyline:</h3>
+				<p>
+					My first exposure to programming was during college with
+					FORTRAN and MATLAB, as I got my bachelor's degree in
+					Mechanical Engineering. In 2018, I started learning
+					Front-End Web Development with JavaScript as a stepping
+					stone to find my way back in the world of programming.
+				</p>
+				<p>
+					In early 2019, I switched gears to Python with intention of
+					learning data science, alongside covering algorithms and
+					mathematical topics by going through related textbooks.
+					After finishing a bunch of online bootcamps, learning
+					scikit-learn, pandas, and numpy libraries for data science,
+					SQL, plotly and other few libraries for data visualization
+					and for creating dashboards. Recently I've been working on
+					flask which also this website is written in, in addition to
+					improve the dashboards I create.
+				</p>
+				<p>
+					In 2021, I have been working my way up with tensorflow and
+					NLP. As of now, I mostly work on projects to build my
+					portfolio.
+				</p>
+			</div>
+		</div>
+
+		<div class="row mb-4">
+			<div class="col-md-4">
+				<div class="card bg-transparent text-dark text-center">
+					<div class="card-body">
+						<i
+							class="bi bi-patch-check-fill"
+							style="font-size: 3rem"
+						></i>
+						<h5>Data Scientist with Python Career Path</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card bg-dark text-white text-center">
+					<div class="card-body">
+						<i
+							class="bi bi-patch-check-fill"
+							style="font-size: 3rem"
+						></i>
+						<h5>Data Science and Machine Learning Bootcamp</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card bg-transparent text-dark text-center">
+					<div class="card-body">
+						<i
+							class="bi bi-patch-check-fill"
+							style="font-size: 3rem"
+						></i>
+						<h5>SQL Bootcamp</h5>
+						<br />
+						<br />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="bg-dark text-white text-center p-5">
+	<div class="row">
+		<div class="col">
+			<div class="container pt-3">
+				<h3>
+					Interested in Reading about
+					<br />
+					My English Teaching Career?
+				</h3>
+				<p class="d-none d-md-block"></p>
+				<a
+					href="{{url_for('core.about_english_teacher')}}"
+					class="btn btn-outline-light btn-lg"
+					>Learn More</a
+				>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- HOME CONTACT SECTION -->
+<section class="bg-white text-dark text-center p-5">
+	<div class="row">
+		<div class="col">
+			<div class="container pt-3">
+				<h3>Are You Ready To Get Started?</h3>
+				<p class="d-none d-md-block"></p>
+				<a
+					href="{{url_for('core.contact')}}"
+					class="btn btn-outline-dark btn-lg"
+					>Contact Me</a
+				>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

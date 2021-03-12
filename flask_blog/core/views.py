@@ -38,9 +38,14 @@ def blog():
     return render_template('blog.html', blog_posts=blog_posts, title='mJubeni | Blog')
 
 
-@core.route('/about')
-def about():
-    return render_template('about.html', title='mJubeni | About')
+@core.route('/about_data_scientist')
+def about_data_scientist():
+    return render_template('about_data_scientist.html', title='mJubeni | Data Scientist')
+
+
+@core.route('/about_english_teacher')
+def about_english_teacher():
+    return render_template('about_english_teacher.html', title='mJubeni | English Teacher')
 
 
 @core.route('/contact', methods=['GET', 'POST'])

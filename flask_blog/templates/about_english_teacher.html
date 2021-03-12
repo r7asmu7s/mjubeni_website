@@ -1,0 +1,241 @@
+{% extends 'base.html' %}
+<!-- BLOCK CONTENT -->
+{% block content %}
+
+<!-- PAGE HEADER -->
+<header class="bg-dark text-white">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 m-auto text-center">
+				<p style="font-size: 2rem">As English Teacher</p>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="py-3">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+				<p class="lead pt-4">Hi. Mehrzad here.</p>
+				<p class="lead">
+					Teaching has been an incredibly rewarding journey. Let's go
+					through my storyline, experiences and achievements to get
+					familiarized with my potential.
+				</p>
+			</div>
+			<div class="col-md-2"></div>
+			<div class="col-md-3">
+				<img
+					src="{{url_for('static', filename = 'img/mjubeni_picture.jpg')}}"
+					alt="mJubeni picture"
+					class="img-fluid"
+					style="border-radius: 90% 10% 90% 10% / 10% 90% 10% 90%"
+				/>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ENGLISH TEACHER SECTION -->
+<section class="bg-light text-black py-2">
+	<div class="container py-3">
+		<div class="row">
+			<div class="col-md-8">
+				<h3 class="card-title">Storyline:</h3>
+				<p>
+					The English language has been a life-long journey for me. I
+					started learning English as a toddler, my mom taught me
+					rudimentary vocabulary she knew and read stories, exposing
+					me to the language. As a teenager, I started doing
+					translations from English to Farsi and vice versa, which
+					ended up with writing and translating articles for @home
+					Robotics Team at Islamic Azad University and industrial
+					manuals and books for Nivan Hydraulics Co.
+				</p>
+				<p>
+					Some traits run in the family, as for ours, it's been
+					teaching. I started teaching English in my first year in
+					college, having one-on-one sessions and free discussion
+					classes. Later, I taught at the University of Applied
+					Science and Technology in Tehran, Iran. To validate myself
+					and reach the apex level of teaching methods, I obtained the
+					CELTA certificate, in Istanbul, Turkey. Nowadays, due to the
+					pandemic, most of my classes are online, looking after 30+
+					students as they prepare for TOFEL, IELTS, and GRE.
+				</p>
+			</div>
+			<div
+				class="col-md-4 d-flex align-items-center justify-content-center"
+			>
+				<p class="text-center">
+					<i class="fas fa-chalkboard-teacher fa-8x"></i>
+					<br /><br />
+					Download
+					<br />
+					English Teacher CV:
+					<br />
+					<a
+						href="https://drive.google.com/file/d/1GYcGQbcrLN_Arhqv9Ri699AmF2s7cijO/view?usp=sharing"
+						target="_blank"
+						style="text-decoration: none; color: black"
+						><i class="fas fa-cloud-download-alt fa-1x"></i
+					></a>
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- BLOCKQUOTE -->
+<section class="bg-white py-3">
+	<div class="container">
+		<blockquote class="blockquote text-right">
+			<p class="mb-0 lead">
+				"Teachers have three loves:
+				<br />
+				love of learning, love of learners,
+				<br />
+				and the love of bringing the first two loves together."
+			</p>
+			<footer class="blockquote-footer">
+				<!-- Someone famous in <cite title="Source Title">Source Title</cite> -->
+				Scott Hayden <cite title="Source Title"></cite>
+			</footer>
+		</blockquote>
+	</div>
+</section>
+<section class="bg-light text-dark py-2">
+	<div class="container py-3">
+		<div class="row pb-4">
+			<div class="col-md-12">
+				<div class="card bg-light text-dark border-dark text-left">
+					<div class="card-body">
+						<h3 class="card-title">Experience:</h3>
+						<h5 class="card-subtitle pt-2">
+							Freelance English Teacher
+						</h5>
+						<p class="text-muted">
+							2013 - Present | Istanbul, Turkey
+						</p>
+						<p class="pb-2">
+							Teaching 30+ students on a weekly basison either for
+							general English or as they prepare for IELTS, TOEFL
+							or GRE exams.
+						</p>
+						<hr />
+						<h5 class="card-subtitle pt-2">
+							Course Instructor at University of Applied Science
+							and Technology
+						</h5>
+						<p class="text-muted">2016 - 2017 | Tehran, Iran</p>
+						<p class="pb-2">
+							English and Mechanical Engineering Course
+							Instructor.
+						</p>
+						<hr />
+						<h5 class="card-subtitle pt-2">
+							Translator at Nivan Hydraulics Co.
+						</h5>
+						<p class="text-muted">2015 - 2016 | Tehran, Iran</p>
+						<p class="pb-2">
+							Translating industrial manuals, documents and books
+							relating to hydraulics, pneumatics and PLC.
+							Responsible for contacting and contracting upcoming
+							institutes for didactic courses.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="bg-light text-dark">
+	<div class="container pb-3">
+		<div class="row mb-4">
+			<div class="col-md-12">
+				<div class="card bg-dark text-white border-white text-center">
+					<div class="card-body">
+						<i class="fas fa-award fa-4x pb-3"></i>
+						<h5 class="card-subtitle pb-2">
+							Honors of Instructor of the Year 2017
+						</h5>
+						<h5 class="card-subtitle">
+							University of Applied Science and Technology
+						</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="bg-light text-dark">
+	<div class="container pb-3">
+		<div class="row mb-4">
+			<div class="col-md-12">
+				<div class="card bg-dark text-white border-white text-center">
+					<div class="card-body">
+						<i
+							class="bi bi-patch-check-fill"
+							style="font-size: 3rem"
+						></i>
+						<h5>University of Cambridge CELTA Certificate</h5>
+						<p>
+							"Mehrzad was very responsive to feedback and as a
+							result, made astonishing progress. He was a
+							hard-working, organized, professional and
+							cooperative member of the group. He shows great
+							potential to be an effective classroom teacher."
+						</p>
+						<blockquote class="blockquote text-center">
+							<footer class="blockquote-footer">
+								<!-- Someone famous in <cite title="Source Title">Source Title</cite> -->
+								CELTA Course Instructor
+								<cite title="Source Title"></cite>
+							</footer>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- HOME CONTACT SECTION -->
+<section class="bg-dark text-white text-center p-5">
+	<div class="row">
+		<div class="col">
+			<div class="container pt-3">
+				<h3>
+					Interested in Reading about
+					<br />
+					My Data Science Career?
+				</h3>
+				<p class="d-none d-md-block"></p>
+				<a
+					href="{{url_for('core.about_data_scientist')}}"
+					class="btn btn-outline-light btn-lg"
+					>Learn More</a
+				>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="bg-white text-dark text-center p-5">
+	<div class="row">
+		<div class="col">
+			<div class="container pt-3">
+				<h3>Are You Ready To Get Started?</h3>
+				<p class="d-none d-md-block"></p>
+				<a
+					href="{{url_for('core.contact')}}"
+					class="btn btn-outline-dark btn-lg"
+					>Contact Me</a
+				>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock content %}
